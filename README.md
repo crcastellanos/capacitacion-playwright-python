@@ -1,6 +1,6 @@
 # Capacitacion-Playwright-Python
 
-* Cronograma de capacitación y temáticas:
+* **:calendar: Cronograma de capacitación y temáticas:**
 
 <table>
   <tr>
