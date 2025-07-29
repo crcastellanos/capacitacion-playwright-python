@@ -31,7 +31,7 @@
     <td style="text-align:center;">07/08/2025</td>
     <td style="text-align:center;">1:30 PM</td>
     <td style="text-align:center;">2:30 PM</td>
-    <td style="text-align:center;">Interacción con checkbox, click, validación de texto en pantalla, select menu, radio buttons, logs.</td>
+    <td style="text-align:center;">Interacción con elementos web y generación de logs.</td>
   </tr>
   <tr>
     <td style="text-align:center;">08/08/2025</td>
