@@ -1,5 +1,10 @@
+let usuarios = [];
 
-let usuarios=[]
+// Se agrega el listener al formulario para evitar recarga y llamar a la función
+document.getElementById("userForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+    mostrarNombreCompleto();
+});
 
 function mostrarNombreCompleto() {
     const nombre = document.getElementById("nombre").value.trim();
@@ -7,14 +12,19 @@ function mostrarNombreCompleto() {
     const activo = document.getElementById("activo").checked;
     const genero = document.getElementById("genero").value;
     const edad = document.querySelector(".edad").value.trim();
-    const nombreCompleto = `${nombre} ${apellido} ${activo ? 'Activo' : 'Inactivo'} ${edad} ${genero}`;
+
+    const nombreCompleto = `${nombre} ${apellido}`;
+    const estado = activo ? 'Activo' : 'Inactivo';
+
     alert("Nombre completo: " + nombreCompleto);
+
     usuarios.push({
-        nombre:nombreCompleto,
-        edad:edad,
-        estado: activo ? "Activo" : "Inactivo",
-        genero:genero
-    })
+        nombre: nombreCompleto,
+        edad: edad,
+        estado: estado,
+        genero: genero
+    });
+
     renderizarUsuarios();
 }
 

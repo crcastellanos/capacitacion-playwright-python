@@ -1,5 +1,5 @@
 asyncio==3.4.3
-backports.asyncio.runner==1.2.0
+#backports.asyncio.runner==1.2.0
 certifi==2025.7.14
 charset-normalizer==3.4.2
 exceptiongroup==1.3.0

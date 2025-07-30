@@ -1,4 +1,5 @@
 import pytest
+import asyncio
 from playwright.async_api import async_playwright,expect
 
 @pytest.mark.asyncio
@@ -14,7 +15,7 @@ async def test_run_activo():
             mensaje_alerta = dialog.message
             await dialog.accept()
         page.once("dialog", manejar_alerta)
-        await page.goto("http://127.0.0.1:5500/index.html")
+        await page.goto("http://127.0.0.1:5502/formularioTest/index.html")
         await page.fill("#nombre", "duber")
         await page.fill("#apellido", "garcia")
         await page.fill("input.edad", "22")
