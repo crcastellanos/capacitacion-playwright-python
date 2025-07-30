@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Test</title>
+</head>
+<body>
+    <div class="section">
+        <h1>Formulario de Usuario</h1>
+        <div class="content">
+            <div class="left">
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre del usuario">
+                <input type="text" id="apellido" placeholder="Apellido del usuario">
+                <input type="checkbox" id="activo"><label>activo</label>
+                <input type="text" class="edad" placeholder="Edad del usuario">
+                <select id="genero">
+                    <option id="masculino" value="masculino">Masculino</option>
+                    <option id="femenino" value="femenino">Femenino</option>
+                </select>
+                <button id="Mostrar" onclick="mostrarNombreCompleto()">Mostrar</button>
+            </div>
+            <div>
+                <div id="listaUsuarios">
+                    <!-- aqui van los usuarios del sistema -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
