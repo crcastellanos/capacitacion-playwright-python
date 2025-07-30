@@ -1,6 +1,7 @@
 # Capacitacion-Playwright-Python
 
-* **:calendar: Cronograma de capacitación y temáticas:**
+## **:calendar: Cronograma de capacitación y temáticas:**
+
 
 <table>
   <tr>
@@ -40,3 +41,6 @@
     <td style="text-align:center;">Pruebas de API</td>
   </tr>
 </table>
+
+
+##
