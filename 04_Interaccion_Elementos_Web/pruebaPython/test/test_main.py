@@ -7,7 +7,12 @@ async def test_run_activo():
     mensaje_alerta = ""
     async with async_playwright() as p:
         browser = await p.chromium.launch(headless=False,slow_mo=500)
-        context = await browser.new_context(record_video_dir="videos/")
+        context = await browser.new_context(            
+            record_video_dir="videos/",
+            record_video_size={"width": 1920, "height": 950},
+            viewport={"width": 1920, "height": 950},
+            device_scale_factor=1.0,
+        )
         page = await context.new_page()
         await page.set_viewport_size({"width": 1962, "height": 1080})
         async def manejar_alerta(dialog):
@@ -29,5 +34,5 @@ async def test_run_activo():
         await expect(page.locator("#listaUsuarios").locator("#lblestado")).to_be_visible()
         assert "Test" in await page.title()
         assert "duber garcia" in mensaje_alerta
-        context.close()
+        await context.close()
         await browser.close()
