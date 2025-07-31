@@ -18,5 +18,4 @@ def main():
     abrir_pagina("prueba2", "https://playwright.dev")
     abrir_pagina("prueba3", "https://www.wikipedia.org")
 
-if __name__ == "__main__":
-    main()
+main()

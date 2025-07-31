@@ -12,6 +12,7 @@ async def abrir_pagina(nombre_prueba, url):
         await page.wait_for_timeout(2000)
         await page.screenshot(path=f"{nombre_prueba}.png")
         await browser.close()
+        
         print(f"✅ Finalizó {nombre_prueba} en {time.time() - start:.2f} seg\n")
 
 async def main():
@@ -22,5 +23,4 @@ async def main():
     ]
     await asyncio.gather(*tareas)
 
-if __name__ == "__main__":
-    asyncio.run(main())
+asyncio.run(main())
