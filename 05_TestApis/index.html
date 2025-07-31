@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Vista de Post</title>
+</head>
+<body>
+  <h1 id="titulo">Cargando...</h1>
+  <p id="cuerpo">Espere mientras se carga el post...</p>
+
+  <script>
+    async function mostrarPost(post) {
+      document.getElementById("titulo").innerText = post.title;
+      document.getElementById("cuerpo").innerText = post.body;
+    }
+  </script>
+</body>
+</html>
