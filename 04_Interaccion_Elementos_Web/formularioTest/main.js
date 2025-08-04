@@ -1,6 +1,5 @@
 let usuarios = [];
 
-// Se agrega el listener al formulario para evitar recarga y llamar a la función
 document.getElementById("userForm").addEventListener("submit", function (e) {
     e.preventDefault();
     mostrarNombreCompleto();
@@ -26,19 +25,25 @@ function mostrarNombreCompleto() {
     });
 
     renderizarUsuarios();
+    document.getElementById("nombre").value="";
+    document.getElementById("apellido").value="";
+    document.getElementById("activo").checked = false;
+    document.getElementById("genero").value="";
+    document.querySelector(".edad").value="";
+
 }
 
 function renderizarUsuarios() {
     const contenedor = document.getElementById("listaUsuarios");
     contenedor.innerHTML = "";
 
-    usuarios.forEach(usuario => {
+    usuarios.forEach((usuario,index) => {
         const div = document.createElement("div");
         div.innerHTML = `
-            <label id="lblnombre"><strong>Nombre:</strong> ${usuario.nombre} </label>
-            <label id="lbledad"><strong>Edad:</strong> ${usuario.edad} </label>
-            <label id="lblestado"><strong>Estado:</strong> ${usuario.estado} </label>
-            <label id="lblgenero"><strong>Género:</strong> ${usuario.genero} </label>
+            <label id="lblnombre_${index}"><strong>Nombre:</strong> ${usuario.nombre} </label>
+            <label id="lbledad_${index}"><strong>Edad:</strong> ${usuario.edad} </label>
+            <label id="lblestado_${index}"><strong>Estado:</strong> ${usuario.estado} </label>
+            <label id="lblgenero_${index}"><strong>Género:</strong> ${usuario.genero} </label>
             <hr>
         `;
         contenedor.appendChild(div);

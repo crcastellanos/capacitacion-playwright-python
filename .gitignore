@@ -1,2 +1,7 @@
 # Ignorar carpetas
 venv/
+__pycache__
+.pytest_cache
+.vscode
+videos/*
+capturas/*
