@@ -3,7 +3,7 @@ import pytest
 
 @pytest.mark.only_browser("chromium")
 def test_sauce_link(page: Page):
-    page.goto("https://saucedemo.com")
+    page.goto("https://saucedemo.com/")
     assert page.title() == "Swag Labs"
 
 """
