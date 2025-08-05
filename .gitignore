@@ -5,3 +5,4 @@ __pycache__
 .vscode
 videos/*
 capturas/*
+test-results

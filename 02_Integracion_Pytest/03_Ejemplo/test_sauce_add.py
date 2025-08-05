@@ -1,7 +1,7 @@
 from playwright.sync_api import Page
 import pytest
 
-@pytest.mark.only_browser("chromium")
+#@pytest.mark.only_browser("chromium")
 def test_sauce_implicito(page: Page):
     page.goto("/")
     assert page.title() == "Swag Labs"
@@ -38,7 +38,7 @@ def test_ordenamiento_productos_precio(page: Page):
     print(prices)
 
 def test_cierre_sesion(page: Page):
-    page.goto("https://www.saucedemo.com/")
+    page.goto("/")
     page.fill('[data-test="username"]', "standard_user")
     page.fill('[data-test="password"]', "secret_sauce")
     page.click('[data-test="login-button"]')
