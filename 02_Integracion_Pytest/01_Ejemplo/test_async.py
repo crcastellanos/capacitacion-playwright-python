@@ -7,4 +7,4 @@ async def test_async_navegador(page: Page):
     await page.screenshot(path="demo.png")
     titulo = await page.title()
     print(titulo)
-    assert "WhatIsMyBrowser" in titulo
+    assert "What browser? My browser? Is my browser out of date?" in titulo
