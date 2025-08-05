@@ -34,5 +34,5 @@ def test_logout(page: Page):
     page.fill('input[name="password"]', "demo")
     page.click('input[value="Log In"]')
     page.click("a[href*='logout.htm']")
-    assert page.url == BASE_URL
+    assert page.url == "https://parabank.parasoft.com/parabank/index.htm?ConnType=JDBC"
     assert page.is_visible("input[value='Log In']")

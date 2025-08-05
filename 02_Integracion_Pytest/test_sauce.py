@@ -1,5 +1,5 @@
 from playwright.sync_api import Page
-import pytest
+#import pytest
 
 def test_sauce_link(page: Page):
     page.goto("https://saucedemo.com/")
