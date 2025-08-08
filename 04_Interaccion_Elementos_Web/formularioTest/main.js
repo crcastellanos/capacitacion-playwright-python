@@ -40,10 +40,10 @@ function renderizarUsuarios() {
     usuarios.forEach((usuario,index) => {
         const div = document.createElement("div");
         div.innerHTML = `
-            <label id="lblnombre_${index}"><strong>Nombre:</strong> ${usuario.nombre} </label>
-            <label id="lbledad_${index}"><strong>Edad:</strong> ${usuario.edad} </label>
-            <label id="lblestado_${index}"><strong>Estado:</strong> ${usuario.estado} </label>
-            <label id="lblgenero_${index}"><strong>Género:</strong> ${usuario.genero} </label>
+            <label id="lblnombre_${index}" data-testId="lblNomre${index}"><strong>Nombre:</strong> ${usuario.nombre} </label>
+            <label id="lbledad_${index}" data-testId="lblEdad${index}"><strong>Edad:</strong> ${usuario.edad} </label>
+            <label id="lblestado_${index}" data-testId="lblEstado${index}"><strong>Estado:</strong> ${usuario.estado} </label>
+            <label id="lblgenero_${index}" data-testId="lblGenero${index}"><strong>Género:</strong> ${usuario.genero} </label>
             <hr>
         `;
         contenedor.appendChild(div);

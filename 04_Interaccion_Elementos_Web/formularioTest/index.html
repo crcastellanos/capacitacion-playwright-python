@@ -12,15 +12,15 @@
         <div class="content">
             <div class="left">
                 <form id="userForm">
-                    <input type="text" id="nombre" name="nombre" placeholder="Nombre del usuario">
-                    <input type="text" id="apellido" placeholder="Apellido del usuario">
-                    <input type="checkbox" id="activo"><label for="activo">activo</label> 
-                    <input type="text" class="edad" placeholder="Edad del usuario">
-                    <select id="genero">
-                        <option value="masculino">Masculino</option> 
-                        <option value="femenino">Femenino</option>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre del usuario" data-testId="txtNombre">
+                    <input type="text" id="apellido" placeholder="Apellido del usuario" data-testId="txtApellido">
+                    <input type="checkbox" id="activo" data-testId="checkEstado"><label for="activo">activo</label> 
+                    <input type="text" class="edad" placeholder="Edad del usuario" data-testId="txtEdad">
+                    <select id="genero" data-testId="selectGenero">
+                        <option value="masculino" data-testId="selectMasculino">Masculino</option> 
+                        <option value="femenino" data-testId="selectFemenino">Femenino</option>
                     </select>
-                    <button type="submit" id="Mostrar">Mostrar</button>
+                    <button type="submit" id="Mostrar" data-testId="btnMostrar">Mostrar</button>
                 </form>
             </div>
             <div>
