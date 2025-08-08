@@ -14,7 +14,7 @@ async def test_run_activo():
             device_scale_factor=1.0,
         )
         page = await context.new_page()
-        await page.set_viewport_size({"width": 1962, "height": 950})
+        #await page.set_viewport_size({"width": 1962, "height": 950})
 
         async def manejar_alerta(dialog):
             nonlocal mensaje_alerta
