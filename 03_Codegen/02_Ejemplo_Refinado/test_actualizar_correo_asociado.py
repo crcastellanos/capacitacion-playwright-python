@@ -12,7 +12,7 @@ def test_example(page: Page) -> None:
     page.get_by_role("button", name="Buscar").click()
     page.get_by_role("button", name="Actualizar").click()
     valor_previo = page.get_by_role("textbox", name="Email").input_value()
-    page.get_by_role("textbox", name="Email").fill("carolina.gomez@solucionessyh.com")
+    page.get_by_role("textbox", name="Email").fill("carolinagomez@solucionessyh.com")
     page.get_by_text("Confirmar").click()
     valor_final = page.get_by_role("textbox", name="Email").input_value()
     print("")
