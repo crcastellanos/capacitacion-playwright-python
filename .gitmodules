@@ -1,0 +1,12 @@
+[submodule "05_TestApis/05_TestApis/testing-lists"]
+	path = 05_TestApis/05_TestApis/testing-lists
+	url = https://github.com/JoanEsquivel/testing-lists
+[submodule "05_TestApis/testing-lists"]
+	path = 05_TestApis/testing-lists
+	url = https://github.com/JoanEsquivel/testing-lists
+[submodule "05_TestApis/05_TestApis/playwright-python-test-framework"]
+	path = 05_TestApis/05_TestApis/playwright-python-test-framework
+	url = https://github.com/JoanEsquivel/playwright-python-test-framework
+[submodule "05_TestApis/playwright-python-test-framework"]
+	path = 05_TestApis/playwright-python-test-framework
+	url = https://github.com/JoanEsquivel/playwright-python-test-framework
